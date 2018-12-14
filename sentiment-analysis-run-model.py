@@ -16,6 +16,9 @@ testList.append("this is awful, the worst product I bought")
 testList.append("this is not that good")
 testList.append("this is not that good, I am disappointed")
 testList.append("this is not good")
+testList.append("this is not bad")
+testList.append("this is what I call a total fail")
+testList.append("this is what I call a great fail")
 
 testJulien = loaded_vectorizer.transform(testList)
 

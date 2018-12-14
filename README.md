@@ -20,3 +20,10 @@ testJulien = loaded_vectorizer.transform(testList)
 
 print(loaded_model.predict(testJulien))
 ```
+
+## Samples of results
+
+```bash
+python3 sentiment-analysis-run-model.py
+[1 0 0 1 0 0 0 0 0 0 1]
+```

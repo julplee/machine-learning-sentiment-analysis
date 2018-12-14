@@ -44,7 +44,8 @@ reviews_test_clean = preprocess_reviews(reviews_test)
 
 # Vectorize reviews
 
-vectorizer = CountVectorizer(binary=True)
+# vectorizer = CountVectorizer(binary=True)
+vectorizer = TfidfVectorizer()
 vectorizer.fit(reviews_train_clean)
 test_set = vectorizer.transform(reviews_train_clean)
 validation_set = vectorizer.transform(reviews_test_clean)
