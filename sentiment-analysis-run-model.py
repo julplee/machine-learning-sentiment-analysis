@@ -19,6 +19,13 @@ testList.append("this is not good")
 testList.append("this is not bad")
 testList.append("this is what I call a total fail")
 testList.append("this is what I call a great fail")
+testList.append("I would not recommend")
+testList.append("I would not reccomend")
+testList.append("I recommend")
+testList.append("I reccomend")
+testList.append("Our second Acer, loved the first for almost 3 years. I will never do business with them again!")
+testList.append("I will never do business with them again!")
+testList.append("Can't deal with the noise!")
 
 testJulien = loaded_vectorizer.transform(testList)
 

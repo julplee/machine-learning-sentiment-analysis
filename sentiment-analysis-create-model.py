@@ -66,7 +66,7 @@ target = [1 if i < 12500 else 0 for i in range(25000)]
 #            % (c, accuracy_score(y_val, lr.predict(x_val))))
 
 # Train model
-final_classifier = LogisticRegression(C=0.05)
+final_classifier = LogisticRegression(C=1)
 final_classifier.fit(test_set, target)
 print ("Final Accuracy: %s"
        % accuracy_score(target, final_classifier.predict(validation_set)))
