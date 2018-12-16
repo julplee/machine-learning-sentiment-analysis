@@ -34,7 +34,8 @@ def preprocess_reviews(reviews):
 
     reviews = [REPLACE_NO_SPACE.sub(NO_SPACE, line.lower())
                for line in reviews]
-    reviews = [REPLACE_WITH_SPACE.sub(SPACE, line) for line in reviews]
+    reviews = [REPLACE_WITH_SPACE.sub(SPACE, line)
+               for line in reviews]
 
     return reviews
 
@@ -88,8 +89,8 @@ print ("Final Accuracy: %s"
 #         key=lambda x: x[1])[:5]:
 #     print (best_negative)
 
-# save the model to disk
+# save the classifier to disk
 pickle.dump(final_classifier, open(classifier_filename, 'wb'))
 
-# save the classifier
+# save the vectorizer to disk
 pickle.dump(vectorizer, open(vectorizer_filename, 'wb'))
